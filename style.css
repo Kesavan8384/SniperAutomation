@@ -1408,10 +1408,15 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer-social-icon a {
+.footer-social-icon a  {
   color: #fff;
   font-size: 16px;
   margin-right: 15px;
+}
+.footer-social-icon a iconify-icon  {
+  color: #fff;
+  font-size: 30px;
+  /* margin-right: 15px; */
 }
 
 .footer-social-icon i {
@@ -1465,6 +1470,7 @@ ul {
 
 .footer-widget ul li a {
   color: #878787;
+  text-decoration: none;
   text-transform: capitalize;
 }
 
@@ -1523,7 +1529,11 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+  text-decoration: none;
+
 }
+
+
 
 /* footer */
 
@@ -2048,3 +2058,4 @@ ul {
   display: flex;
   position: relative;
 }
+
