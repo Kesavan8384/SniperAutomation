@@ -1676,16 +1676,21 @@ ul {
 
 
 .quoates {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 16px;
+  gap: 20px;
 }
 
+
+
 .quoates span:first-child {
-  font-size: 32px;
+  font-size: 40px;
   color: #0084ff;
   height: 25px;
+  transform: rotate(19deg);
 }
 
 .quoates span:last-child {
@@ -1958,3 +1963,7 @@ ul {
 
 /* client logo */
 /* client logo */
+
+.client-box{
+margin-top: 52px !important;
+}
