@@ -187,13 +187,24 @@
 }
 
 .third-sec-card-leftbox-head {
-  width: 68%;
+  width: 74%;
+  position: relative;
+
 }
 
 .third-sec-card-leftbox-head h1 {
+  /* font-weight: 700;
+  color: #ffffff;
+  font-size: 67px; */
   font-weight: 700;
   color: #ffffff;
   font-size: 67px;
+  position: absolute;
+  top: 53px;
+  left: 0px;
+
+
+
 }
 
 .third-sec-card-leftbox-body {
@@ -1775,6 +1786,15 @@ ul {
 
 .contact-left .section-title .stroke-text {
   font-size: 160px !important;
+}
+
+.third-sec-card-leftbox-head .stroke-text{
+  font-size: 160px !important;
+    color: #d67f7f !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke-width: 3px !important;
+    -webkit-text-stroke-color: #95959559 !important;
+    font-weight: 600;
 }
 
 .contact-left .title {
