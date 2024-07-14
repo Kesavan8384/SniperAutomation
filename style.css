@@ -11,6 +11,11 @@
   letter-spacing: 3px;
 }
 
+.nav-link{
+  font-size: 15px !important;
+}
+
+
 
 
 .nav-menu {
@@ -66,10 +71,11 @@
 }
 
 .logo-right-sub div span {
-  font-size: .813em;
+  
   font-weight: bold;
   letter-spacing: -.03em;
   line-height: 1.25;
+  font-size: 14px ;
 
 }
 
@@ -395,6 +401,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:15px;
 }
 
 .box-title {
@@ -416,12 +423,17 @@
   text-align: center;
   /* line-height: 21px; */
   display: flex;
+  position: relative;
   margin: 20px 0;
-  border: 6px solid white;
+  /* border: 6px solid white; */
   align-items: center;
   align-content: center;
   justify-content: center;
 
+}
+
+.icon-logo iconify-icon{
+position: absolute;
 }
 
 
@@ -913,11 +925,11 @@
 
 
 
-@media (max-width:34em) {
+/* @media (max-width:34em) {
   .nav-menu {
     background: #000 !important;
   }
-}
+} */
 
 .nav-item {
   padding: 0 10px;
@@ -932,11 +944,11 @@
   font-weight: 600;
 }
 
-@media (max-width: 34em) {
+/* @media (max-width: 34em) {
   .menu-item {
     padding: 10px 10px 10px;
   }
-}
+} */
 
 .navbar-toggler {
   cursor: pointer;
@@ -1244,6 +1256,9 @@
 
 .testimonial-area .testimonial-slider .owl-stage-outer {
   overflow: hidden;
+}
+.client-name a{
+  text-decoration: none;
 }
 
 .testimonial-area .testimonial-slider .client {
@@ -2079,3 +2094,54 @@ ul {
   position: relative;
 }
 
+
+
+/* circular loader  */
+
+.circular-progress {
+  --size: 250px;
+  --half-size: calc(var(--size) / 2);
+  --stroke-width: 14px;
+  --radius: calc((var(--size) - var(--stroke-width)) / 2);
+  --circumference: calc(var(--radius) * pi * 2);
+  --dash: calc((var(--progress) * var(--circumference)) / 100);
+  animation: progress-animation 5s linear 0s 1 forwards;
+}
+
+.circular-progress circle {
+  cx: var(--half-size);
+  cy: var(--half-size);
+  r: var(--radius);
+  stroke-width: var(--stroke-width);
+  fill: none;
+  stroke-linecap: round;
+}
+
+.circular-progress circle.bg {
+  stroke: #dddddd34;
+}
+
+.circular-progress circle.fg {
+  transform: rotate(-90deg);
+  transform-origin: var(--half-size) var(--half-size);
+  stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+  transition: stroke-dasharray 0.3s linear 0s;
+  stroke: #fff;
+}
+
+@property --progress {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes progress-animation {
+  from {
+    --progress: 0;
+  }
+  to {
+    --progress: 95;
+  }
+}
+
+/* circular loader  */

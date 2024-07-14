@@ -22,9 +22,15 @@ $(window).scroll(function () {
   });
   
   // ===== HAMBURGER BUTTON ===== //
+  // $(document).ready(function () {
+  //   $(".nav-button").click(function () {
+  //     $(".nav-button").toggleClass("change");
+  //   });
+  // });
+
   $(document).ready(function () {
     $(".nav-button").click(function () {
-      $(".nav-button").toggleClass("change");
+      $(".navbar-nav").slideToggle(); // Toggle the visibility of the nav items
     });
   });
   
