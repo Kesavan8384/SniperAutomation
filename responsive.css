@@ -1,8 +1,98 @@
-@media screen and (max-width: 480px) {
-    .logo-right {
-      display: none;
-    }
-    .navbar{
-        background: transparent;
-    }
+@media screen and (max-width: 600px) {
+  .logo-right {
+    display: none;
   }
+
+  .navbar {
+    display: none;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 100px;
+    left: 19px;
+    width: 100%;
+  }
+
+  .banner video {
+    border-radius: 0px;
+  }
+
+  .second-sec {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .second-sec-card div {
+    gap: 0px;
+  }
+
+  .second-sec-card {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .third-sec-card {
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 0px;
+  }
+
+  .third-sec-card-overlay {
+    border-radius: 0px;
+  }
+
+  .third-sec-card-leftbox {
+    margin: 0;
+    align-items: center;
+    top: 18px;
+    gap: 34px;
+    width: 100%;
+
+
+  }
+
+  .third-sec-card-leftbox-head {
+    text-align: center;
+    width: 100%;
+  }
+
+  .third-sec-card-leftbox-head h1 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 62px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .third-sec-card-leftbox-head .stroke-text {
+    font-size: 90px !important;
+  }
+
+  .third-sec-card-leftbox-body {
+    width: 87%;
+    text-align: justify;
+  }
+
+  .third-sec-card-leftbox-body h4 {
+    font-size: 18px;
+  }
+
+  .third-sec-card-leftbox-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .third-sec-sub-card {
+    display: none;
+  }
+
+  .fourth-sec-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fourth-sec-right {
+    justify-content: center;
+  }
+}
