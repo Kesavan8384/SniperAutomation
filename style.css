@@ -18,6 +18,15 @@
 
 
 
+
+.responsive-view .navbar-res{
+  display: none;
+}
+.responsive-view {
+  display: none;
+}
+
+
 .nav-menu {
   background: transparent;
   padding: 30px 90px;

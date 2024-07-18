@@ -1,4 +1,6 @@
 @media screen and (max-width: 600px) {
+
+
   .logo-right {
     display: none;
   }
@@ -7,10 +9,23 @@
     display: none;
   }
 
+  .responsive-view .navbar-res{
+    display: block;
+  }
+  .responsive-view {
+    display: block;
+  }
+
+  
+  .banner-content .row{
+    --bs-gutter-x:0;
+  }
+
   .banner-content {
     position: absolute;
     top: 100px;
-    left: 19px;
+   right: 10px;
+   left: 0px;
     width: 100%;
   }
 
@@ -90,9 +105,230 @@
   .fourth-sec-main {
     display: flex;
     flex-direction: column;
+    padding: 10px 0px;
   }
 
   .fourth-sec-right {
-    justify-content: center;
+    align-items: center;
   }
+
+  .fourth-sec-right-subhead {
+    width: 73%;
+  }
+
+  .fourth-sec-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .fourth-sec-right-body {
+    width: 73%;
+  }
+
+  .fourth-sec-right-subhead h2 {
+    font-size: 30px;
+  }
+
+  .fourth-sec-right-content div p {
+    font-size: 13px;
+  }
+
+  .fifth-sec-main {
+    padding: 30px 40px;
+    gap: 10px;
+    flex-direction: column;
+    height: 180vh;
+  }
+
+  .fifth-sec-box1 {
+    max-width: none;
+  }
+
+  .fifth-sec-box2 {
+    max-width: none;
+  }
+
+  .fifth-sec-box3 {
+    width: 100%;
+  }
+
+  .sixth-sec-content {
+    flex-direction: column;
+  }
+
+  .card__collection {
+    padding: 0px;
+  }
+
+  .section-title .stroke-text {
+    font-size: 83px;
+  }
+
+  .section-title h2 {
+    top: 55px;
+  }
+
+  .section-title .title {
+    font-size: 40px;
+  }
+
+  .nine-sec-main {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  .nine-sec-left {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: pa;
+    /* padding: 51px; */
+    /* padding-left: 144px; */
+    align-items: center;
+  }
+
+  .nine-sec-left-content {
+    width: 68%;
+    text-align: center;
+  }
+
+  .nine-sec-left-content h1 {
+    font-size: 22px;
+  }
+
+  .nine-sec-right {
+    width: 100%;
+    padding: 10px;
+    background: #0084ff;
+  }
+
+  .nine-sec-right-box {
+    background-image: url(assets/images/people-safety-equipment-their-workplace.jpg);
+    height: 37vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    display: flex;
+    position: relative;
+  }
+
+  .contact-right .title {
+    min-height: 10vh;
+    max-height: 10vh;
+    padding: 17px 20px;
+    width: 73%;
+  }
+
+  .contact .content .info {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .contact-left .section-title {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .contact-left .section-title .stroke-text {
+    color: #d67f7f;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #a4a4a459;
+    font-size: 100px !important;
+  }
+
+  .contact-left .section-title h2 {
+    position: absolute;
+    top: 45px !important;
+    text-align: center;
+    left: 47px !important;
+    font-size: 30px;
+    right: 0;
+    font-weight: 700;
+  }
+
+  .contact-left .title {
+    width: 73% !important;
+  }
+
+  .contact-left .row {
+    padding: 0px;
+  }
+
+  .contact-left .form-group {
+    padding: 0px;
+  }
+
+  .contact button.btn {
+    padding: 12px;
+    border-radius: 24px;
+    margin: 23px 0px;
+    font-size: 27px;
+    background: #0084ff;
+    color: #ffffff;
+    width: 100%;
+    /* display: flex; */
+  }
+
+  .contact {
+    padding: 100px 0px 0px;
+  }
+
+
+  .fourth-sec-box-first {
+    width: 100%;
+  }
+
+  .responsive-map-container {
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .fourth-sec-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .fourth-sec-box div:nth-child(3) {
+    width: 73%;
+  }
+
+
+  .testimonial-main .section-title .title {
+    top: 87px;
+  }
+  .testimonial-main .section-title p {
+    font-size: 14px;
+  }
+
+  /* .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+} */
+
+  
+
+  /* @media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+} */
+
+
 }
+
