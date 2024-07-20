@@ -1276,9 +1276,11 @@ position: absolute;
   text-decoration: none;
 }
 
+
 .testimonial-area .testimonial-slider .client {
   text-align: center;
   background: #fff;
+  min-height: 50vh;
   border: 2px solid rgba(245, 106, 121, 0.2);
   border-radius: 10px;
   transition: all 0.3s ease-in;

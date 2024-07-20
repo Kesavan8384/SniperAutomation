@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px) {
   .nav-menu{
-    padding: 15px 20px;
+    padding: 3px 0px 0px 0px;
     background: #0000009c;
     transition: 0.5ms;
   }
@@ -13,7 +13,7 @@
     text-align-last: right;
     position: absolute;
     right: 25px;
-    top: 30px;
+    top: 19px;
 }
   .responsive-view .navbar-res{
     display: block;
@@ -21,7 +21,14 @@
   .responsive-view {
     display: block;
   }
+  .navbar-toggler{
+    padding: 0px 14px;
+  }
 
+  .navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+  }
   
   .banner-content .row{
     --bs-gutter-x:0;
@@ -316,6 +323,10 @@
     font-size: 14px;
   }
 
+  .testimonial-area .testimonial-slider .client {
+    min-height: 50vh;
+  }
+
   /* .navbar-toggle {
     position: relative;
     float: right;
@@ -417,4 +428,22 @@
       padding: 10px;
       width: 100%;
   }
+}
+
+
+@media screen and (max-width:360px
+) {
+  /* .nav-menu{
+    width: 98%;
+  } */
+
+  .text-hero {
+    font-size: 65px;
+  }
+  .section-title .stroke-text {
+    font-size: 79px;
+}
+.card__collection .cards {
+  width: 340px;}
+
 }
