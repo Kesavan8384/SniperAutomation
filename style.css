@@ -104,10 +104,21 @@
   filter: brightness(0.5);
   border-radius: 0px 0px 170px 0px;
 }
+.banner img {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+  object-fit: cover;
+  background-size: cover;
+  min-height: 100vh;
+  filter: brightness(0.5);
+  max-height: 100vh;
+}
 
 .banner-content {
   position: absolute;
-  top: 287px;
+  top: 200px;
   left: 115px;
   width: 46%;
 }
