@@ -129,6 +129,12 @@
   left: 115px;
   width: 46%; 
 }
+.banner-content-contact{
+  position: absolute;
+  top: 200px;
+  left: 115px;
+  width: 46%; 
+}
 
 .costum-menu-item {
   color: black !important;
@@ -3041,3 +3047,9 @@ p.service_text {
   border-radius: 30px;
 }
 /* about page style end */
+
+
+
+
+
+
