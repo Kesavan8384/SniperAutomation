@@ -353,6 +353,7 @@ body {
 
 .gallery-second {
   margin: 0 auto;
+  padding: 10px 0px;
   /* width and heigh of iamges */
   /* --_size: 120px;  */
   --_size: 173px;
