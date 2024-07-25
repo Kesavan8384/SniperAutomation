@@ -1,385 +1,810 @@
+
+/* navbar */
+.navbar-brand {
+  color: white;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.nav-link{
+  font-size: 15px !important;
+}
+
+
+.bg-light{
+  background-color: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link.active{
+  color: none !important;
+}
+.responsive-view .navbar-res{
+  display: none;
+}
+.responsive-view {
+  display: none;
+}
+
+
+.nav-menu {
+  background: transparent;
+  padding: 30px 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all .4s;
+}
+
+.logo-left {
+  width: 60%;
+}
+
+.logo-left img {
+  width: 28%;
+}
+
+.logo-hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.logo-right {
+  display: flex;
+  gap: 10px;
+}
+
+.logo-right .fa {
+  font-size: 20px;
+  color: #0084ff;
+}
+
+.logo-right-sub {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-right-sub div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+
+}
+
+.logo-right-sub div span {
+  
+  font-weight: bold;
+  letter-spacing: -.03em;
+  line-height: 1.25;
+  font-size: 14px ;
+
+}
+
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* @media (max-width: 34em) {
+  .menu-item {
+    padding: 10px 10px 10px;
+  }
+} */
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #F9F8F7;
+}
+
+.line1,
+.line3 {
+  width: 28px;
+  height: 2px;
+  margin: 6px;
+  transition: 0.4s;
+
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: #0084ff;
+}
+
+.costum-menu-item:hover {
+  color: #0084ff;
+}
+
+.nav-active {
+  color: #0084ff;
+}
+
+.dropdown-item {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black !important;
+  position: fixed;
+
+}
+
+
+.costum-menu-item {
+  color: white !important;
+}
+/* ===== END OF NAVBAR SECTION ===== */
+
+
+
+/* navbar  */
+
+
+
+
+
 /* gallery page style start  */
-
-
-
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #222;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.gallery {
+  /* margin: auto; */
+
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 150px 10px 10px 10px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33% - 20px);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item:hover img {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  margin: 10% auto;
+  padding: 20px;
+  background: #fff;
+  max-width: 70%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+
+.modal-left img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  border-radius: 10px;
+}
+
+.modal-right {
+  margin-left: 20px;
+  padding: 0 2em;
+  width: 40%;
+}
+
+.modal-right p {
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
   .gallery {
-    margin: auto;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
+    padding: 55px 10px 10px 10px;
   }
-  
+
   .gallery-item {
-    flex: 1 1 calc(33% - 20px);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s;
-    border-radius: 10px;
+    flex: 1 1 calc(50% - 20px);
   }
-  
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    opacity: 0.6;
-  }
-  
-  .gallery-item:hover {
-    transform: scale(1.02);
-  }
-  
-  .gallery-item:hover img {
-    opacity: 1;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+
   .modal-content {
-    display: flex;
-    flex-direction: row;
-    margin: 10% auto;
-    padding: 20px;
-    background: #fff;
-    max-width: 70%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    flex-direction: column;
   }
-  
-  
-  .modal-left img {
-    max-width: 100%;
-    height: auto;
-    float: left;
-    border-radius: 10px;
-  }
-  
+
   .modal-right {
-    margin-left: 20px;
-    padding:0 2em;
-    width: 40%;
-  }
-  
-  .modal-right p {
-    margin: 0;
-  }
-  
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .nav-btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+    margin-left: 0;
     margin-top: 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    width: 80%;
+    padding: 0;
   }
-  
-  .nav-btn:hover {
-    background-color: #555;
+
+  .nav-btn {
+    margin-top: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 calc(50% - 20px);
-    }
-  
-    .modal-content {
-        flex-direction: column;
-    }
-  
-    .modal-right {
-        margin-left: 0;
-        margin-top: 20px;
-        width: 80%;
-        padding:0;
-    }
-  
-    .nav-btn {
-        margin-top: 10px;
-    }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: 55px 10px 10px 10px;
   }
-  
-  @media (max-width: 480px) {
-    .gallery-item {
-        flex: 1 1 100%;
-    }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    padding: 55px 10px 10px 10px;
   }
+
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+}
 
 
 
-  
+
+
 
 
 .gallery-second button {
-    -webkit-appearance: none;
-    border-radius: 0;
-    text-align: inherit;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    cursor: pointer;
-    color: inherit;
-    font: inherit;
-    outline: none;
-    border: none;
-  }
-  
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+.gallery-second {
+  margin: 0 auto;
+  /* width and heigh of iamges */
+  /* --_size: 120px;  */
+  --_size: 173px;
+  --_grid-cols: repeat(2, 1fr);
+
+  --_gap: 5px;
+  --_translate-img: 0 calc(var(--_size) * 3 * -1);
+  /* define where we want to translate the image from*/
+  --_translate-bio: 0 calc(var(--_size) * 3);
+  /* define where we want to translate the text from */
+  --_hover-opacity: 0.2;
+  /* opacity of images when one of them is "active"*/
+  --_img-offset: calc(var(--_size) / 4);
+  --_bio-top: 50%;
+  /* positioning of the bio when active */
+
+  width: 100%;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: var(--_grid-cols);
+
+  gap: var(--_gap);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
   .gallery-second {
-    margin: 0 auto;
-    --_size: 120px; /* width and heigh of iamges */
-    --_grid-cols: repeat(2, 1fr);
-  
-    --_gap: 5px;
-    --_translate-img: 0 calc(var(--_size) * 3 * -1); /* define where we want to translate the image from*/
-    --_translate-bio: 0 calc(var(--_size) * 3); /* define where we want to translate the text from */
-    --_hover-opacity: 0.2; /* opacity of images when one of them is "active"*/
-    --_img-offset: calc(var(--_size) / 4);
-    --_bio-top: 50%; /* positioning of the bio when active */
-  
-    width: 100%;
-    max-width: fit-content;
-    display: grid;
-    grid-template-columns: var(--_grid-cols);
-  
-    gap: var(--_gap);
-    position: relative;
-    overflow: hidden;
+    /* --_size: 200px; */
+    --_size: 370px;
+    --_grid-cols: repeat(4, 1fr);
+    --_translate-bio: calc(var(--_size) * 3) 0;
+    --_bio-top: 0;
   }
-  @media (min-width: 600px) {
-    .gallery-second {
-      --_size: 200px;
-      --_grid-cols: repeat(4, 1fr);
-      --_translate-bio: calc(var(--_size) * 3) 0;
-      --_bio-top: 0;
-    }
-  }
-  
-  .gallery-second > article {
-    height: var(--_size);
-    aspect-ratio: 1;
-    background-image: var(--bg-img);
-    background-position: center;
-    background-size: 0%;
-    background-repeat: no-repeat;
-  }
-  .gallery-second > article > button {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-  .gallery-second img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 500ms ease-in-out,filter 500ms ease-in-out;
-  }
-  
-  .gallery-second > article > div {
-    position: absolute;
-    top: var(--_bio-top);
-    right: 0;
-    width: calc((var(--_size) + var(--_gap)) * 2);
-    height: calc((var(--_size) + var(--_gap)) * 2);
-    background-color: white;
-    color: #555;
-    padding: 2rem;
-    transition: 500ms ease-in-out;
-    opacity: 0;
-    translate: var(--_translate-bio);
-    z-index: 1;
-  }
-  
-  .gallery-second > article > div > h2 {
-    font-size: 1.2rem;
-  }
-  .gallery-second > article > div > p {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    opacity: 0.8;
-    
-      max-height: 50%; /* this could be better */
-      overflow-y: auto;
-  }
-  .gallery-second > article > div > button {
-    border: none;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 2;
-    cursor: pointer;
-    transition: rotate 300ms;
-  }
-  
-  .gallery-second > article > div > button:focus-visible,
-  .gallery-second > article > div > button:hover {
-    rotate: 90deg;
-  }
-  
-  .gallery-second > article::before {
-    content: "";
-    position: absolute;
-    inset: var(--_img-offset);
-    width: calc((var(--_size) + var(--_gap)) * 1.5);
-    height: calc((var(--_size) + var(--_gap)) * 1.5);
-    aspect-ratio: 1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-    opacity: 0;
-    translate: var(--_translate-img);
-    transition: 500ms ease-in-out;
-    background-image: inherit;
-  }
-  
-  /* set opacity on images */
-  .gallery-second:has(article > button:focus-within) > article img {
-    opacity: var(--_hover-opacity);
-  }
-  
-  /* slide in photo */
-  /*.gallery > article:has(>button:focus-within)::before {*/
-  .gallery-second > article:focus-within::before {
-    translate: 0;
-    opacity: 1;
-  }
-  /* slide in bio */
-  /*.gallery article:has(>button:focus-within) > div {*/
-  .gallery-second article:focus-within > div {
-    opacity: 1;
-    translate: 0;
-  }
-  
-  /* grayscale on all images on hover EXCEPT hovered element */
-  .gallery-second:has(:hover) > article:not(:hover) img{
-    filter: grayscale(10);
-  }
-  
-  /* close buttons */
-  /* 
+}
+
+.gallery-second>article {
+  height: var(--_size);
+  aspect-ratio: 1;
+  background-image: var(--bg-img);
+  background-position: center;
+  background-size: 0%;
+  background-repeat: no-repeat;
+}
+
+.gallery-second>article>button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.gallery-second img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 500ms ease-in-out, filter 500ms ease-in-out;
+}
+
+.gallery-second>article>div {
+  position: absolute;
+  top: var(--_bio-top);
+  right: 0;
+  width: calc((var(--_size) + var(--_gap)) * 2);
+  height: calc((var(--_size) + var(--_gap)) * 2);
+  background-color: white;
+  color: #555;
+  padding: 2rem;
+  transition: 500ms ease-in-out;
+  opacity: 0;
+  translate: var(--_translate-bio);
+  z-index: 1;
+}
+
+.gallery-second>article>div>h2 {
+  font-size: 1.2rem;
+}
+
+.gallery-second>article>div>p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+
+  max-height: 50%;
+  /* this could be better */
+  overflow-y: auto;
+}
+
+.gallery-second>article>div>button {
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: rotate 300ms;
+}
+
+.gallery-second>article>div>button:focus-visible,
+.gallery-second>article>div>button:hover {
+  rotate: 90deg;
+}
+
+.gallery-second>article::before {
+  content: "";
+  position: absolute;
+  inset: var(--_img-offset);
+  width: calc((var(--_size) + var(--_gap)) * 1.5);
+  height: calc((var(--_size) + var(--_gap)) * 1.5);
+  aspect-ratio: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0;
+  translate: var(--_translate-img);
+  transition: 500ms ease-in-out;
+  background-image: inherit;
+}
+
+/* set opacity on images */
+.gallery-second:has(article > button:focus-within)>article img {
+  opacity: var(--_hover-opacity);
+}
+
+/* slide in photo */
+/*.gallery > article:has(>button:focus-within)::before {*/
+.gallery-second>article:focus-within::before {
+  translate: 0;
+  opacity: 1;
+}
+
+/* slide in bio */
+/*.gallery article:has(>button:focus-within) > div {*/
+.gallery-second article:focus-within>div {
+  opacity: 1;
+  translate: 0;
+}
+
+/* grayscale on all images on hover EXCEPT hovered element */
+.gallery-second:has(:hover)>article:not(:hover) img {
+  filter: grayscale(10);
+}
+
+/* close buttons */
+/* 
   these are not really needed, the important thing is taking the focus aways from the "open" button 
   I have given them tabindex -1 so that they don't get keyboard focus which means that tabbing on the keyboard will automatically open the next image and bio. 
   Removing the tabindex -1 will give a pause (and extra keyboard action) between each iamge opening, it depends on how you want this to work.
   */
-  
-  .gallery-second:has(button[data-close]:focus-within) > article::before {
-      translate: var(--_translate-img);
-  }
-  .gallery-second:has(button[data-close]:focus-within) > article > div {
-    translate: var(--_translate-bio);
-  }
+
+.gallery-second:has(button[data-close]:focus-within)>article::before {
+  translate: var(--_translate-img);
+}
+
+.gallery-second:has(button[data-close]:focus-within)>article>div {
+  translate: var(--_translate-bio);
+}
 
 
 
 
 
 
-  .wrapper {
-    margin: 0 auto;
-    max-width: 1600px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 15rem);
-    place-content: center;
-    padding: 1rem;
-    gap: 1rem;
-  }
-  
-  .card {
-    position: relative;
-    width: 15rem;
-    aspect-ratio: 1 / 1;
-    background-color: hsl(0, 0%, 90%);
-    color: hsl(0, 0%, 10%);
-    border-radius: 0.25rem;
-    overflow: hidden;
-    filter: drop-shadow(0rem 0.5rem 0.25rem black);
-  }
-  
-  .cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-position: center;
-    object-fit: cover;
-    filter: grayscale(0);
-    transition: all 0.5s ease;
-    z-index: 100;
-  }
-  
-  .cover:hover {
-    filter: grayscale(1);
-    scale: 1.5;
-  }
-  
-  .cover:hover ~ .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-    display: none;
-    background-color: hsl(0, 0%, 80%);
-    transition: all 0.6s ease;
-    z-index: 200;
-  }
-  
-  .artist {
-    font: normal 700 1.1rem/1.2rem "Roboto";
-    text-transform: uppercase;
-  }
-  
-  .album {
-    font: normal 400 1.1rem/1.2rem "Roboto";
-  }
-  
-  .year {
-    font: italic 500 0.8rem/0.9rem "Roboto";
-  }
-  
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  place-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  width: 15rem;
+  aspect-ratio: 1 / 1;
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 10%);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  filter: drop-shadow(0rem 0.5rem 0.25rem black);
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+  filter: grayscale(0);
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.cover:hover {
+  filter: grayscale(1);
+  scale: 1.5;
+}
+
+.cover:hover~.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  display: none;
+  background-color: hsl(0, 0%, 80%);
+  transition: all 0.6s ease;
+  z-index: 200;
+}
+
+.artist {
+  font: normal 700 1.1rem/1.2rem "Roboto";
+  text-transform: uppercase;
+}
+
+.album {
+  font: normal 400 1.1rem/1.2rem "Roboto";
+}
+
+.year {
+  font: italic 500 0.8rem/0.9rem "Roboto";
+}
 
 
 
-  
-  
-  /* gallery page style end  */
+
+
+
+/* gallery page style end  */
+
+
+
+
+/* footer */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+  width: 55%;
+}
+
+.footer-text h4 {
+  color: white;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a  {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon a iconify-icon  {
+  color: #fff;
+  font-size: 30px;
+  /* margin-right: 15px; */
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #0084ff;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #0084ff;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #0084ff;
+  padding: 13px 20px;
+  border: 1px solid #0084ff;
+  top: 0;
+}
+
+.subscribe-form button iconify-icon {
+  color: #fff;
+  font-size: 26px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #0084ff;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #0084ff;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  text-decoration: none;
+
+}
+
+
+
+/* footer */
