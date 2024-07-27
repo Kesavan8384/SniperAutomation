@@ -1187,11 +1187,12 @@ position: absolute;
 .contact .content .info h4 {
   font-size: 13px;
   line-height: 1.4;
+  font-weight: 700;
 }
 
 .contact .content .info h4 span {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 700;
   color: #999999;
 }
 
