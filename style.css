@@ -1172,6 +1172,8 @@ position: absolute;
 
 .contact .content .info {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .contact .content .info iconify-icon {
@@ -1185,14 +1187,14 @@ position: absolute;
 }
 
 .contact .content .info h4 {
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.4;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .contact .content .info h4 span {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 500;
   color: #999999;
 }
 
